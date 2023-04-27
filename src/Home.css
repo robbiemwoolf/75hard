@@ -1,17 +1,15 @@
 .container {
     display: flex;
     flex-wrap: wrap;
-    width: 90%;
-    margin: 5%;
+    width: 100%;
     text-align: center;
+    height: 100dvh;
 }
 
 .heading {
     width: 100%;
-}
-
-h1 {
-    width: 100%;
+    padding: 0;
+    margin-bottom: -15%;
 }
 
 .goHome {
@@ -21,7 +19,6 @@ h1 {
 .box {
     display: flex;
     width: 50%;
-    aspect-ratio: 1;   
 }
 
 .footer {
@@ -30,8 +27,13 @@ h1 {
     flex-wrap: nowrap;
 }
 
+.footerBtn {
+    width: 100%;
+}
+
 .ftrbtn {
     width: 100%;
+    height: 95%;
 }
 
 button {

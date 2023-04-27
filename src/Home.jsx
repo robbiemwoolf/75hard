@@ -109,8 +109,8 @@ function Home() {
             <button className={`${fToggle}`} onClick={() => setFDone(!fDone)}><img src='Dumbbell.png' /></button>
         </div>
         <div className="footer">
-            <div className="ftrbtn">
-                <Link to={`rules`}><button>Rules</button></Link>
+            <div className='footerBtn'>
+                <Link to={`rules`}><button className="ftrbtn">Rules</button></Link>
             </div>
             {/* <div className="ftrbtn">
                 <button>Settings</button>
