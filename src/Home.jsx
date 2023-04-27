@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import './Home.css'
 
@@ -85,22 +85,22 @@ function Home() {
             <button onClick={streakCounter}><h1>{streak}/75</h1></button>
         </div>
         <div className="box">
-            <button className={`${aToggle}`} onClick={() => setADone(!aDone)}><img src='src/assets/Water.png' /></button>
+            <button className={`${aToggle}`} onClick={() => setADone(!aDone)}><img src='Water.png' /></button>
         </div>
         <div className="box">
-            <button className={`${bToggle}`} onClick={() => setBDone(!bDone)}><img src='src/assets/Book.png' /></button>
+            <button className={`${bToggle}`} onClick={() => setBDone(!bDone)}><img src='Book.png' /></button>
         </div>
         <div className="box">
-            <button className={`${cToggle}`} onClick={() => setCDone(!cDone)}><img src='src/assets/Camera.png' /></button>
+            <button className={`${cToggle}`} onClick={() => setCDone(!cDone)}><img src='Camera.png' /></button>
         </div>
         <div className="box">
-            <button className={`${dToggle}`} onClick={() => setDDone(!dDone)}><img src='src/assets/Tree.png' /></button>
+            <button className={`${dToggle}`} onClick={() => setDDone(!dDone)}><img src='Tree.png' /></button>
         </div>
         <div className="box">
-            <button className={`${eToggle}`} onClick={() => setEDone(!eDone)}><img src='src/assets/Apple.png' /></button>
+            <button className={`${eToggle}`} onClick={() => setEDone(!eDone)}><img src='Apple.png' /></button>
         </div>
         <div className="box">
-            <button className={`${fToggle}`} onClick={() => setFDone(!fDone)}><img src='src/assets/Dumbbell.png' /></button>
+            <button className={`${fToggle}`} onClick={() => setFDone(!fDone)}><img src='Dumbbell.png' /></button>
         </div>
         <div className="footer">
             <div className="ftrbtn">
