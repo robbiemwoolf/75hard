@@ -60,7 +60,7 @@ button:focus-visible {
 }
 
 .done {
-    background-color: green;
+    background-color: rgb(0, 128, 0, .25);
 }
 
 .list {
