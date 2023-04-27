@@ -1,7 +1,8 @@
 import { useState } from 'react'
-import './App.css'
+import { Link } from 'react-router-dom'
+import './Home.css'
 
-function App() {
+function Home() {
   const [aDone, setADone] = useState(false)
   const [bDone, setBDone] = useState(false)
   const [cDone, setCDone] = useState(false)
@@ -10,6 +11,11 @@ function App() {
   const [fDone, setFDone] = useState(false)
 
   const [streak, setStreak] = useState(1)
+  const streakCounter = () => {
+    if (aDone && bDone && cDone && dDone && eDone && fDone) {
+        setStreak((streak) => streak + 1)
+    }
+  }
 
   const aToggle = aDone ? 'done' : null
   const bToggle = bDone ? 'done' : null
@@ -21,7 +27,7 @@ function App() {
   return (
     <div className='container'>
         <div className="heading">
-            <button onClick={() => setStreak((streak) => streak + 1)}><h1>{streak}/75</h1></button>
+            <button onClick={streakCounter}><h1>{streak}/75</h1></button>
         </div>
         <div className="box">
             <button className={`${aToggle}`} onClick={() => setADone(!aDone)}>water</button>
@@ -43,14 +49,14 @@ function App() {
         </div>
         <div className="footer">
             <div className="ftrbtn">
-                <button>Rules/Tips</button>
+                <Link to={`rules`}><button>Rules</button></Link>
             </div>
-            <div className="ftrbtn">
+            {/* <div className="ftrbtn">
                 <button>Settings</button>
-            </div>
+            </div> */}
         </div>
     </div>
   )
 }
 
-export default App
+export default Home
