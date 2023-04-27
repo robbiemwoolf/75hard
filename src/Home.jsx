@@ -76,6 +76,12 @@ function Home() {
   const streakCounter = () => {
     if (aDone && bDone && cDone && dDone && eDone && fDone) {
         setStreak((streak) => streak + 1)
+        setADone(false)
+        setBDone(false)
+        setCDone(false)
+        setDDone(false)
+        setEDone(false)
+        setFDone(false)
     }
   }
 
