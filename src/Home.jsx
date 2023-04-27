@@ -1,21 +1,70 @@
-import { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import './Home.css'
 
 function Home() {
-  const [aDone, setADone] = useState(false)
-  const [bDone, setBDone] = useState(false)
-  const [cDone, setCDone] = useState(false)
-  const [dDone, setDDone] = useState(false)
-  const [eDone, setEDone] = useState(false)
-  const [fDone, setFDone] = useState(false)
+    const [streak, setStreak] = useState(() => {
+        const saved = window.localStorage.getItem('streak')
+        const initial = JSON.parse(saved)
+        return initial || 1
+    })
+    useEffect(() => {
+        window.localStorage.setItem('streak', JSON.stringify(streak))
+    }, [streak])
 
-  const [streak, setStreak] = useState(1)
-  const streakCounter = () => {
-    if (aDone && bDone && cDone && dDone && eDone && fDone) {
-        setStreak((streak) => streak + 1)
-    }
-  }
+    const [aDone, setADone] = useState(() => {
+        const saved = window.localStorage.getItem('aDone')
+        const initial = JSON.parse(saved)
+        return initial || false
+    })
+    useEffect(() => {
+        window.localStorage.setItem('aDone', JSON.stringify(aDone))
+    }, [aDone])
+
+    const [bDone, setBDone] = useState(() => {
+        const saved = window.localStorage.getItem('bDone')
+        const initial = JSON.parse(saved)
+        return initial || false
+    })
+    useEffect(() => {
+        window.localStorage.setItem('bDone', JSON.stringify(bDone))
+    }, [bDone])
+
+    const [cDone, setCDone] = useState(() => {
+        const saved = window.localStorage.getItem('cDone')
+        const initial = JSON.parse(saved)
+        return initial || false
+    })
+    useEffect(() => {
+        window.localStorage.setItem('cDone', JSON.stringify(cDone))
+    }, [cDone])
+
+    const [dDone, setDDone] = useState(() => {
+        const saved = window.localStorage.getItem('dDone')
+        const initial = JSON.parse(saved)
+        return initial || false
+    })
+    useEffect(() => {
+        window.localStorage.setItem('dDone', JSON.stringify(dDone))
+    }, [dDone])
+
+    const [eDone, setEDone] = useState(() => {
+        const saved = window.localStorage.getItem('eDone')
+        const initial = JSON.parse(saved)
+        return initial || false
+    })
+    useEffect(() => {
+        window.localStorage.setItem('eDone', JSON.stringify(eDone))
+    }, [eDone])
+
+    const [fDone, setFDone] = useState(() => {
+        const saved = window.localStorage.getItem('fDone')
+        const initial = JSON.parse(saved)
+        return initial || false
+    })
+    useEffect(() => {
+        window.localStorage.setItem('fDone', JSON.stringify(fDone))
+    }, [fDone])
 
   const aToggle = aDone ? 'done' : null
   const bToggle = bDone ? 'done' : null
@@ -23,6 +72,12 @@ function Home() {
   const dToggle = dDone ? 'done' : null
   const eToggle = eDone ? 'done' : null
   const fToggle = fDone ? 'done' : null
+
+  const streakCounter = () => {
+    if (aDone && bDone && cDone && dDone && eDone && fDone) {
+        setStreak((streak) => streak + 1)
+    }
+  }
 
   return (
     <div className='container'>
