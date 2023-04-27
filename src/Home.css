@@ -14,6 +14,10 @@ h1 {
     width: 100%;
 }
 
+.goHome {
+    display: block;    
+}
+
 .box {
     display: flex;
     width: 50%;
@@ -56,4 +60,8 @@ button:focus-visible {
 
 .done {
     background-color: green;
+}
+
+.list {
+    text-align: left;
 }
