@@ -30,22 +30,22 @@ function Home() {
             <button onClick={streakCounter}><h1>{streak}/75</h1></button>
         </div>
         <div className="box">
-            <button className={`${aToggle}`} onClick={() => setADone(!aDone)}>water</button>
+            <button className={`${aToggle}`} onClick={() => setADone(!aDone)}><img src='src/assets/Water.png' /></button>
         </div>
         <div className="box">
-            <button className={`${bToggle}`} onClick={() => setBDone(!bDone)}>read</button>
+            <button className={`${bToggle}`} onClick={() => setBDone(!bDone)}><img src='src/assets/Book.png' /></button>
         </div>
         <div className="box">
-            <button className={`${cToggle}`} onClick={() => setCDone(!cDone)}>photo</button>
+            <button className={`${cToggle}`} onClick={() => setCDone(!cDone)}><img src='src/assets/Camera.png' /></button>
         </div>
         <div className="box">
-            <button className={`${dToggle}`} onClick={() => setDDone(!dDone)}>outside</button>
+            <button className={`${dToggle}`} onClick={() => setDDone(!dDone)}><img src='src/assets/Tree.png' /></button>
         </div>
         <div className="box">
-            <button className={`${eToggle}`} onClick={() => setEDone(!eDone)}>diet</button>
+            <button className={`${eToggle}`} onClick={() => setEDone(!eDone)}><img src='src/assets/Apple.png' /></button>
         </div>
         <div className="box">
-            <button className={`${fToggle}`} onClick={() => setFDone(!fDone)}>exercise</button>
+            <button className={`${fToggle}`} onClick={() => setFDone(!fDone)}><img src='src/assets/Dumbbell.png' /></button>
         </div>
         <div className="footer">
             <div className="ftrbtn">
