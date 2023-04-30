@@ -3,13 +3,16 @@
     flex-wrap: wrap;
     width: 100%;
     text-align: center;
-    height: 100dvh;
+    height: 97.5lvh;
 }
 
 .heading {
     width: 100%;
-    padding: 0;
-    margin-bottom: -15%;
+    height: clamp(50px, 12.5%, 1250px)
+}
+
+.streak {
+    height: 100%;
 }
 
 .goHome {
@@ -21,19 +24,29 @@
     width: 50%;
 }
 
-.footer {
-    width: 100%;
+.habits {
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
+    width: 100%;
+    height: clamp(320px, 80%, 8000px);
+    padding-bottom: 0px;
+}
+/* vh 420px - 450px have footer overlapping body content*/
+@media screen and (max-height: 420px) {
+    .habits { 
+        padding-bottom: 30px;
+    }
 }
 
-.footerBtn {
+.footer {
     width: 100%;
+    height: 7.5%;
+    min-height: 30px;
+    height: clamp(30px, 7.5%, 750px);
 }
 
 .ftrbtn {
-    width: 100%;
-    height: 95%;
+    height: 100%;
 }
 
 button {
@@ -41,9 +54,9 @@ button {
     justify-content: center;
     align-items: center;
     border-radius: 8px;
-    border: 1px solid transparent;
-    padding: 0.6em 1.2em;
+    border: 1px solid rgb(65, 71, 54);
     font-size: 1em;
+    padding: 0.6em 1.2em;
     font-weight: 500;
     font-family: inherit;
     background-color: #1a1a1a;
@@ -53,7 +66,7 @@ button {
 }
 
 button:hover {
-    border-color: #646cff;
+    border-color: #ffe864;
 }
 
 button:focus, 

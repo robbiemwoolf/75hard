@@ -88,33 +88,30 @@ function Home() {
   return (
     <div className='container'>
         <div className="heading">
-            <button onClick={streakCounter}><h1>{streak}/75</h1></button>
+            <button className='streak' onClick={streakCounter}><h1>{streak}/75</h1></button>
         </div>
-        <div className="box">
-            <button className={`${aToggle}`} onClick={() => setADone(!aDone)}><img src='Water.png' /></button>
-        </div>
-        <div className="box">
-            <button className={`${bToggle}`} onClick={() => setBDone(!bDone)}><img src='Book.png' /></button>
-        </div>
-        <div className="box">
-            <button className={`${cToggle}`} onClick={() => setCDone(!cDone)}><img src='Camera.png' /></button>
-        </div>
-        <div className="box">
-            <button className={`${dToggle}`} onClick={() => setDDone(!dDone)}><img src='Tree.png' /></button>
-        </div>
-        <div className="box">
-            <button className={`${eToggle}`} onClick={() => setEDone(!eDone)}><img src='Apple.png' /></button>
-        </div>
-        <div className="box">
-            <button className={`${fToggle}`} onClick={() => setFDone(!fDone)}><img src='Dumbbell.png' /></button>
+        <div className='habits'>
+            <div className="box">
+                <button className={`${aToggle}`} onClick={() => setADone(!aDone)}><img src='Water.png' /></button>
+            </div>
+            <div className="box">
+                <button className={`${bToggle}`} onClick={() => setBDone(!bDone)}><img src='Book.png' /></button>
+            </div>
+            <div className="box">
+                <button className={`${cToggle}`} onClick={() => setCDone(!cDone)}><img src='Camera.png' /></button>
+            </div>
+            <div className="box">
+                <button className={`${dToggle}`} onClick={() => setDDone(!dDone)}><img src='Tree.png' /></button>
+            </div>
+            <div className="box">
+                <button className={`${eToggle}`} onClick={() => setEDone(!eDone)}><img src='Apple.png' /></button>
+            </div>
+            <div className="box">
+                <button className={`${fToggle}`} onClick={() => setFDone(!fDone)}><img src='Dumbbell.png' /></button>
+            </div>
         </div>
         <div className="footer">
-            <div className='footerBtn'>
                 <Link to={`rules`}><button className="ftrbtn">Rules</button></Link>
-            </div>
-            {/* <div className="ftrbtn">
-                <button>Settings</button>
-            </div> */}
         </div>
     </div>
   )
