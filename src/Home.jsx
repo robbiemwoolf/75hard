@@ -73,6 +73,8 @@ function Home() {
   const eToggle = eDone ? 'done' : null
   const fToggle = fDone ? 'done' : null
 
+  const streakToggle = (aDone && bDone && cDone && dDone && eDone && fDone) ? 'inc' : null
+
   const streakCounter = () => {
     if (aDone && bDone && cDone && dDone && eDone && fDone) {
         setStreak((streak) => streak + 1)
@@ -88,7 +90,7 @@ function Home() {
   return (
     <div className='container'>
         <div className="heading">
-            <button className='streak' onClick={streakCounter}><h1>{streak}/75</h1></button>
+            <button className={`streak ${streakToggle}`} onClick={streakCounter}><h1>{streak}/75</h1></button>
         </div>
         <div className='habits'>
             <div className="box">
