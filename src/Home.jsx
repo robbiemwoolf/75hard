@@ -113,7 +113,7 @@ function Home() {
             </div>
         </div>
         <div className="footer">
-                <Link to={`rules`}><button className="ftrbtn">Rules</button></Link>
+                <Link to={`rules`} style={{ textDecoration: 'none' }}><button className="ftrbtn">Rules</button></Link>
         </div>
     </div>
   )

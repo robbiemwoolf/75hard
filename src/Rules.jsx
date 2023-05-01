@@ -6,8 +6,8 @@ function Rules() {
   return (
     <div className='container'>
         <div className="heading">
-            <Link to={`/`}>
-                <button className='goHome'>
+            <Link to={`/`} style={{ textDecoration: 'none' }}>
+                <button className='goHome inc'>
                     <h1>75 Hard</h1>
                     <h5>Follow these 5 simple rules every day.</h5>
                 </button>
