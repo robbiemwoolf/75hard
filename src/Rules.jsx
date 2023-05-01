@@ -14,10 +14,10 @@ function Rules() {
             </Link>            
         </div>
         <ol className='list'>
-            <li className='rule'>Drink one gallon of water.</li>
+            <li>Drink one gallon of water.</li>
             <li>Read 10 pages of a nonfiction self-improvement book.</li>
             <li>Take one progress photo.</li>
-            <li>Choose a diet. Stick to it.</li>
+            <li>Choose a diet. Stick to it. No alcohol.</li>
             <li>Do two 45-minute workouts; one has to be outdoors.</li>
         </ol>
     </div>

@@ -93,23 +93,41 @@ function Home() {
             <button className={`streak ${streakToggle}`} onClick={streakCounter}><h1>{streak}/75</h1></button>
         </div>
         <div className='habits'>
-            <div className="box">
-                <button className={`${aToggle}`} onClick={() => setADone(!aDone)}><img src='Water.png' /></button>
+            <div className="box" onClick={() => setADone(!aDone)} onDoubleClick={}>
+                <button className={`${aToggle}`}><img src='Water.png' /></button>
+                <div className='rule'>
+                    <div className='text'>Drink one gallon of water.</div>
+                </div>
             </div>
-            <div className="box">
-                <button className={`${bToggle}`} onClick={() => setBDone(!bDone)}><img src='Book.png' /></button>
+            <div className="box" onClick={() => setBDone(!bDone)}>
+                <button className={`${bToggle}`}><img src='Book.png' /></button>
+                <div className='rule'>
+                    <div className='text'>Read 10 pages of a self-improvement book.</div>
+                </div>
             </div>
-            <div className="box">
-                <button className={`${cToggle}`} onClick={() => setCDone(!cDone)}><img src='Camera.png' /></button>
+            <div className="box" onClick={() => setCDone(!cDone)}>
+                <button className={`${cToggle}`}><img src='Camera.png' /></button>
+                <div className='rule'>
+                    <div className='text'>Take a progess photo.</div>
+                </div>
             </div>
-            <div className="box">
-                <button className={`${dToggle}`} onClick={() => setDDone(!dDone)}><img src='Tree.png' /></button>
+            <div className="box" onClick={() => setDDone(!dDone)}>
+                <button className={`${dToggle}`}><img src='Tree.png' /></button>
+                <div className='rule'>
+                    <div className='text'>Do a 45 minute workout outdoors.</div>
+                </div>
             </div>
-            <div className="box">
-                <button className={`${eToggle}`} onClick={() => setEDone(!eDone)}><img src='Apple.png' /></button>
+            <div className="box" onClick={() => setEDone(!eDone)}>
+                <button className={`${eToggle}`}><img src='Apple.png' /></button>
+                <div className='rule'>
+                    <div className='text'>Stick to your diet (no alcohol).</div>
+                </div>
             </div>
-            <div className="box">
-                <button className={`${fToggle}`} onClick={() => setFDone(!fDone)}><img src='Dumbbell.png' /></button>
+            <div className="box" onClick={() => setFDone(!fDone)}>
+                <button className={`${fToggle}`}><img src='Dumbbell.png' /></button>
+                <div className='rule'>
+                    <div className='text'>Do another 45 minute workout.</div>
+                </div>
             </div>
         </div>
         <div className="footer">
