@@ -93,7 +93,7 @@ function Home() {
             <button className={`streak ${streakToggle}`} onClick={streakCounter}><h1>{streak}/75</h1></button>
         </div>
         <div className='habits'>
-            <div className="box" onClick={() => setADone(!aDone)} onDoubleClick={}>
+            <div className="box" onClick={() => setADone(!aDone)}>
                 <button className={`${aToggle}`}><img src='Water.png' /></button>
                 <div className='rule'>
                     <div className='text'>Drink one gallon of water.</div>
