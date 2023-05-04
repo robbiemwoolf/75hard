@@ -31,6 +31,7 @@ export default function useLongPress({ onClick }={}) {
         isLongPress.current = false
         timerRef.current = setTimeout(() => {
             isLongPress.current = true
+            setShowRule(true)
         }, 500)
     } 
     
