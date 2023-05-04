@@ -1,9 +1,10 @@
-@keyframes golden {
-    0% {border-color: #7b702c;}
-    33% {border-color: #bebe3b;}
-    66% {border-color: #fbe359;}
-    100% {border-color: #a1a133;}
+@keyframes goldenBorder {
+    0% {border-color: #7b702c; background-color: #fbe35945;}
+    33% {border-color: #bebe3b; background-color: #ffec9745;}
+    66% {border-color: #fbe359; background-color: #fbe35945;}
+    100% {border-color: #a1a133; background-color: #ffec9745;}
 }
+
 .container {
     display: flex;
     flex-wrap: wrap;
@@ -22,7 +23,7 @@
 }
 
 .inc {
-    animation: 1.5s ease-in-out infinite golden;
+    animation: 1.5s ease-in-out infinite goldenBorder;
 }
 
 .goHome {
