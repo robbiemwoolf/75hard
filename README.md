@@ -1,6 +1,6 @@
-# Unofficial 75 HARD Tracker
+# Your Challenge
 
-## A project meant to help track the daily rules set forth in [Andy Frisella's 75 Hard Challenge](https://andyfrisella.com/pages/75hard-info)
+## A project meant to help track six daily rules as you increase your streak. Default rules and length are set forth in [Andy Frisella's 75 Hard Challenge](https://andyfrisella.com/pages/75hard-info)
 
 This is unofficial 75 HARD application. [Here](https://andyfrisella.com/products/75-hard-app) you can find the Andy Frisella's official application.
 
@@ -60,6 +60,8 @@ Start the server
 ## Known issues (Work in progress)
 
 This project is still ongoing. The next issues that will be addressed are: the active link on the icons buttons, the design and implementation of the rules page.
+
+After basic functionality and styling is complete, ability to set custom rules and length of days will be implemented, but the standard 75hard challenge will still be the default option.
 
 ## Find a bug?
 
