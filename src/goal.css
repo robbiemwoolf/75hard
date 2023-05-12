@@ -4,37 +4,37 @@
 }
 
 .oneLogo {
-    background-image: url('Water.png');
+    background-image: url('../public/Water.png');
     background-repeat: no-repeat;
     background-position: center;
 }
 
 .twoLogo {
-    background-image: url('Book.png');
+    background-image: url('../public/Book.png');
     background-repeat: no-repeat;
     background-position: center;
 }
 
 .threeLogo {
-    background-image: url('Camera.png');
+    background-image: url('../public/Camera.png');
     background-repeat: no-repeat;
     background-position: center;
 }
 
 .fourLogo {
-    background-image: url('Tree.png');
+    background-image: url('../public/Tree.png');
     background-repeat: no-repeat;
     background-position: center;
 }
 
 .fiveLogo {
-    background-image: url('Apple.png');
+    background-image: url('../public/Apple.png');
     background-repeat: no-repeat;
     background-position: center;
 }
 
 .sixLogo {
-    background-image: url('Dumbbell.png');
+    background-image: url('../public/Dumbbell.png');
     background-repeat: no-repeat;
     background-position: center;
 }
