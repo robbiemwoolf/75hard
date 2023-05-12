@@ -11,9 +11,6 @@ function Rules() {
 
   return (
     <>
-        <Link to={`/`} style={{ textDecoration: 'none' }} >
-            <button className='header'>Your Challenge</button>
-        </Link>
         {list}
     </>
   )

@@ -6,16 +6,17 @@ import './index.css'
 import './main.css'
 import Rules from './Rules.jsx'
 import Body from './Body.jsx'
+import Header from './Header.jsx'
 
 const router = createBrowserRouter([
     {
         path: "/",
-        element: <Body key='body' />,
+        element: [<Body key='body' />],
         errorElement: <ErrorPage />,
     },
     {
         path: "/rules",
-        element: <Rules />,
+        element: [<Header key='header' />, <Rules key='rules' />],
     }
 ])
 
