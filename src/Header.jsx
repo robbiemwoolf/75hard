@@ -1,9 +1,9 @@
 import { Link } from 'react-router-dom'
 import './main.css'
+import challenges from './challenges'
 import { OneHook, TwoHook, ThreeHook, FourHook, FiveHook, SixHook, StreakHook } from './states'
 // ! still need to check for states when there is an update to the local storage, so that the Header component does not require a refresh to know that all the goals have been completed
 function Header() {
-    const length = 75
 
     const { oneDone, setOneDone } = OneHook()
     const { twoDone, setTwoDone } = TwoHook()
@@ -43,7 +43,7 @@ function Header() {
 
     return (
         <Link to={`/`} style={{ textDecoration: 'none' }} onClick={handleCounterOnClick}>
-                <button className={`header ${streakToggle}`}>Your Challenge<br />{streak}/{length}</button>
+                <button className={`header ${streakToggle}`}>Your Challenge<br />{streak}/{challenges[0].length}</button>
         </Link>
     )
 }

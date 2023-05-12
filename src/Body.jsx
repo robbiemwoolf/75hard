@@ -2,6 +2,7 @@ import { useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import './main.css'
 import './goal.css'
+import challenges from './challenges'
 import { OneHook, TwoHook, ThreeHook, FourHook, FiveHook, SixHook, StreakHook, BaseOneHook, ChoiceOneHook, TextOneHook, BaseTwoHook, ChoiceTwoHook, TextTwoHook, BaseThreeHook, ChoiceThreeHook, TextThreeHook, BaseFourHook, ChoiceFourHook, TextFourHook, BaseFiveHook, ChoiceFiveHook, TextFiveHook, BaseSixHook, ChoiceSixHook, TextSixHook } from './states'
 
 
@@ -75,10 +76,6 @@ function ChoiceSix({ handleClick, handleRuleClick, handleCancel }) {
 
 
 function Body() {
-    // challenge constants
-    const length = 75
-    const goals = [{id: 'one', description: "Drink one gallon of water."}, {id: 'two', description: "Read 10 pages of a nonfiction self-improvement book."}, {id: 'three', description: "Take one progress photo."}, {id: 'four', description: "Choose a diet. Stick to it. No alcohol."}, {id: 'five', description: "Do one OUTDOOR 45-minute workout."}, {id: 'six', description: "Do another 45-minute workout."}]
-
     // states
     const { oneDone, setOneDone } = OneHook()
     const { twoDone, setTwoDone } = TwoHook()
@@ -178,32 +175,32 @@ function Body() {
 
     // show rule handlers
     function handleRuleOneClick() {
-        setTextOne(goals[0].description)
+        setTextOne(challenges[0].rules[0].description)
         setDisplayChoiceOne(false)
         setDisplayOne(true)
     }
     function handleRuleTwoClick() {
-        setTextTwo(goals[1].description)
+        setTextTwo(challenges[0].rules[1].description)
         setDisplayChoiceTwo(false)
         setDisplayTwo(true)
     }
     function handleRuleThreeClick() {
-        setTextThree(goals[2].description)
+        setTextThree(challenges[0].rules[2].description)
         setDisplayChoiceThree(false)
         setDisplayThree(true)
     }
     function handleRuleFourClick() {
-        setTextFour(goals[3].description)
+        setTextFour(challenges[0].rules[3].description)
         setDisplayChoiceFour(false)
         setDisplayFour(true)
     }
     function handleRuleFiveClick() {
-        setTextFive(goals[4].description)
+        setTextFive(challenges[0].rules[4].description)
         setDisplayChoiceFive(false)
         setDisplayFive(true)
     }
     function handleRuleSixClick() {
-        setTextSix(goals[5].description)
+        setTextSix(challenges[0].rules[5].description)
         setDisplayChoiceSix(false)
         setDisplaySix(true)
     }
@@ -307,7 +304,7 @@ function Body() {
     return (
         <>
             <Link to={`/`} style={{ textDecoration: 'none' }} onClick={handleCounterOnClick}>
-                <button className={`header ${streakToggle}`}>Your Challenge<br />{streak}/{length}</button>
+                <button className={`header ${streakToggle}`}>Your Challenge<br />{streak}/{challenges[0].length}</button>
             </Link>
             <div className='body'>
                 <div>
