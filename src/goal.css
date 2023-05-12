@@ -1,0 +1,76 @@
+.base {
+    background-color: rgb(37, 37, 37);
+    height: 20dvh;
+}
+
+.oneLogo {
+    background-image: url('Water.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.twoLogo {
+    background-image: url('Book.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.threeLogo {
+    background-image: url('Camera.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.fourLogo {
+    background-image: url('Tree.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.fiveLogo {
+    background-image: url('Apple.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.sixLogo {
+    background-image: url('Dumbbell.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.habitContainer {
+    height: 20dvh;
+}
+
+.displayRule {
+    background-color: rgb(50, 0, 50);
+    height: 50%;
+}
+
+.completedContainer {
+    display: flex;
+    height: 50%;
+}
+
+.cancel {
+    background-color: red;
+    width: 50%;
+    height: 100%;
+}
+
+.check {
+    background-color: green;
+    width: 50%;
+    height: 100%;
+}
+
+.done {
+    background-color: rgb(0, 128, 0, .25);
+}
+
+.ruleText {
+    background-color: rgba(15, 15, 15, 0.75);
+    font-weight: 400;
+    padding: 5px;
+}

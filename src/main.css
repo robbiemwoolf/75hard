@@ -1,0 +1,48 @@
+button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    border: 1px solid rgb(65, 71, 54);
+    font-size: 1em;
+    padding: 0.6em 1.2em;
+    font-weight: 500;
+    font-family: inherit;
+    background-color: #1a1a1a;
+    cursor: pointer;
+    transition: border-color 0.25s;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+@keyframes goldenBorder {
+    0% {border-color: #7b702c; background-color: #fcbf08;}
+    33% {border-color: #bebe3b; background-color: #d2a40d;}
+    66% {border-color: #fbe359; background-color: #ffcd03;}
+    100% {border-color: #a1a133; background-color: #ffbf00;}
+}
+.header {
+    background-color: rgb(37, 37, 37);
+    height: 19dvh;
+}
+
+.body {
+    height: 60dvh;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.footer {
+    background-color: rgb(37, 37, 37);
+    height: 18dvh;
+}
+
+.listedRule {
+    text-align: center;
+    margin: 10px;
+}
+
+.inc {
+    animation: 1.5s ease-in-out infinite goldenBorder;
+}

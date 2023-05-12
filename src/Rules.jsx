@@ -1,26 +1,21 @@
 import { Link } from 'react-router-dom'
-import './Home.css'
+import './main.css'
 
 function Rules() {
+    const goals = [{id: 'one', description: "Drink one gallon of water."}, {id: 'two', description: "Read 10 pages of a nonfiction self-improvement book."}, {id: 'three', description: "Take one progress photo."}, {id: 'four', description: "Choose a diet. Stick to it. No alcohol."}, {id: 'five', description: "Do one OUTDOOR 45-minute workout."}, {id: 'six', description: "Do another 45-minute workout."}]
+    const list = goals.map((goal) => {
+        return (
+            <p className='listedRule' key={goal.id}>{goal.description}</p>
+        )
+    })
 
   return (
-    <div className='container'>
-        <div className="heading">
-            <Link to={`/`} style={{ textDecoration: 'none' }}>
-                <button className='goHome inc'>
-                    <h1>75 Hard</h1>
-                    <h5>Follow these 5 simple rules every day.</h5>
-                </button>
-            </Link>            
-        </div>
-        <ol className='list'>
-            <li>Drink one gallon of water.</li>
-            <li>Read 10 pages of a nonfiction self-improvement book.</li>
-            <li>Take one progress photo.</li>
-            <li>Choose a diet. Stick to it. No alcohol.</li>
-            <li>Do two 45-minute workouts; one has to be outdoors.</li>
-        </ol>
-    </div>
+    <>
+        <Link to={`/`} style={{ textDecoration: 'none' }} >
+            <button className='header'>Your Challenge</button>
+        </Link>
+        {list}
+    </>
   )
 }
 
