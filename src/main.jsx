@@ -7,11 +7,12 @@ import './main.css'
 import Rules from './Rules.jsx'
 import Body from './Body.jsx'
 import Header from './Header.jsx'
+import Footer from './Footer.jsx'
 
 const router = createBrowserRouter([
     {
         path: "/",
-        element: [<Body key='body' />],
+        element: [<Body key='body' />, <Footer key='footer' />],
         errorElement: <ErrorPage />,
     },
     {

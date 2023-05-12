@@ -344,7 +344,6 @@ function Body() {
                     {displayChoiceSix ? <ChoiceSix handleRuleClick={handleRuleSixClick} handleClick={handleSixCompleted} handleCancel={handleCancelSix} /> : null}
                 </div>
             </div>
-            <Link to={`rules`} style={{ textDecoration: 'none' }}><button className="footer">Rules</button></Link>
         </>
     )
 }
