@@ -22,13 +22,13 @@
 }
 
 .fourLogo {
-    background-image: url('../public/Tree.png');
+    background-image: url('../public/Apple.png');
     background-repeat: no-repeat;
     background-position: center;
 }
 
 .fiveLogo {
-    background-image: url('../public/Apple.png');
+    background-image: url('../public/Tree.png');
     background-repeat: no-repeat;
     background-position: center;
 }
