@@ -1,6 +1,8 @@
 # Your Challenge
 
-## A project meant to help track six daily rules as you increase your streak. Default rules and length are set forth in [Andy Frisella's 75 Hard Challenge](https://andyfrisella.com/pages/75hard-info)
+## A project meant to help track six daily rules as you increase your daily streak.
+
+Default rules and length are set forth in [Andy Frisella's 75 Hard Challenge](https://andyfrisella.com/pages/75hard-info)
 
 This is unofficial 75 HARD application. [Here](https://andyfrisella.com/products/75-hard-app) you can find the Andy Frisella's official application.
 
@@ -15,8 +17,11 @@ This is unofficial 75 HARD application. [Here](https://andyfrisella.com/products
 Upon completion of the 75 days you can expect improvement in many areas, like:
 
 *Confidence
+
 *Self-worth
+
 *Time-management
+
 *Perservance
 
 <!-- ## visual helper here
@@ -36,13 +41,13 @@ What did you learn while building this project? What challenges did you face and
 Clone the project
 
 ```bash
-  git clone https://github.com/robbiemwoolf/75hard
+  git clone https://github.com/robbiemwoolf/yourchallenge
 ```
 
 Go to the project directory
 
 ```bash
-  cd 75hard
+  cd yourchallenge
 ```
 
 Install dependencies
@@ -59,9 +64,7 @@ Start the server
 
 ## Known issues (Work in progress)
 
-This project is still ongoing. The next issues that will be addressed are: the active link on the icons buttons, the design and implementation of the rules page.
-
-After basic functionality and styling is complete, ability to set custom rules and length of days will be implemented, but the standard 75hard challenge will still be the default option.
+This project is still ongoing. The next issue that will be addressed is the separation of reusable components for better file organization and code clarity. Once complete, the addition of the CRUD functions and a database will allow for custom challenges and longterm data storage.
 
 ## Find a bug?
 
@@ -72,5 +75,3 @@ If you found an issue or would like to submit an improvement to this project, pl
 You should consult your physician or other health care professional before starting this or any other fitness program to determine if it is right for your needs. Do not start this program if your physician or health care provider advises against it.
 
 75 HARD™ is a trademark of 44Seven Media.
-
-44Seven Media ©️ 2023. All Rights Reserved.
