@@ -12,7 +12,7 @@ import Footer from './Footer.jsx'
 const router = createBrowserRouter([
     {
         path: "/",
-        element: [<Body key='body' />, <Footer key='footer' />],
+        element: [<Body key='body' />],
         errorElement: <ErrorPage />,
     },
     {

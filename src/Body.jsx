@@ -301,6 +301,21 @@ function Body() {
     const toggleRuleFive = textFive ? 'ruleText' : null
     const toggleRuleSix = textSix ? 'ruleText' : null
 
+    const handleReset = () => {
+        if ( window.confirm("You are about to reset your streak total.")) {
+            setOneDone(false)
+            setTwoDone(false)
+            setThreeDone(false)
+            setFourDone(false)
+            setFiveDone(false)
+            setSixDone(false)
+            setStreak(1)
+            console.log('streak reset')
+        } else {
+            console.log('cancelled reset')
+        }
+    }
+
     return (
         <>
             <Link to={`/`} style={{ textDecoration: 'none' }} onClick={handleCounterOnClick}>
@@ -343,6 +358,10 @@ function Body() {
                     : null}
                     {displayChoiceSix ? <ChoiceSix handleRuleClick={handleRuleSixClick} handleClick={handleSixCompleted} handleCancel={handleCancelSix} /> : null}
                 </div>
+            </div>
+            <div className='footer'>
+                <button className='reset' onClick={handleReset}>Reset</button>
+                <Link to={`rules`} className='navRulePage' style={{ textDecoration: 'none' }}><button className="rulePage">Rules</button></Link>
             </div>
         </>
     )

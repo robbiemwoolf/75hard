@@ -2,7 +2,7 @@ import { Link } from "react-router-dom"
 
 function Footer() {
     return (
-        <Link to={`rules`} style={{ textDecoration: 'none' }}><button className="footer">Rules</button></Link>
+        <Link to={`rules`} className='navRulePage' style={{ textDecoration: 'none' }}><button className="rulePage">Rules</button></Link>
     )
 }
 

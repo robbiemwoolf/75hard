@@ -34,8 +34,23 @@ button {
 }
 
 .footer {
+    display: flex;
+}
+
+.reset {
     background-color: rgb(37, 37, 37);
     height: 18dvh;
+    width: 50%;
+}
+
+.navRulePage {
+    width: 50%;
+}
+
+.rulePage {
+    background-color: rgb(37, 37, 37);
+    height: 18dvh;
+    width: 100%;
 }
 
 .listedRule {
